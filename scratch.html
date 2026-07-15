@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch Your Birthday Surprise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="scratch-page">
+    <main class="page-shell">
+      <section class="scratch-section">
+        <div class="scratch-card">
+          <p class="eyebrow">Scratch & Reveal</p>
+          <h1>Swipe to uncover your surprise</h1>
+          <p class="scratch-instructions">
+            Use your finger or mouse to scratch the heart and reveal the special birthday message hidden underneath.
+          </p>
+          <div class="scratch-heart">
+            <div class="scratch-content">
+              <div class="heart-emoji">💖</div>
+              <div class="content-title">Maitree Choudhary,</div>
+              <div class="content-title">Your birthday wish is ready!</div>
+            </div>
+            <canvas id="scratchCanvas" class="scratch-canvas"></canvas>
+            <img id="scratchRevealImage" class="scratch-reveal-image" src="heart.png" alt="Heart reveal" style="display:none;" />
+          </div>
+          <p id="scratchStatus" class="scratch-status">Scratch at least 60% of the heart to reveal the hidden surprise.</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
